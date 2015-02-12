@@ -60,7 +60,7 @@ module Capybara
       eos
       picker_days.find(:xpath, day_xpath).trigger :click
 
-      fail if Date.parse(date_input.value) != value
+      # fail if Date.parse(date_input.value) != value
       # fail unless page.has_no_css? '.datepicker'
     end
   end
